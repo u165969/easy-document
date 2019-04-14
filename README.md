@@ -24,7 +24,7 @@ You can see the interface of the document command as below:
 $ document --help
 ```
 
-## ToDos
+## Todos
 
 * when you find only one h4 in input
 * code-prettify
