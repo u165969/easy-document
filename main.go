@@ -34,7 +34,6 @@ func document(input, output, tmpl, title, css, js string) error {
 	// generate HTML output
 	t, err := template.ParseFiles(tmpl)
 	if err != nil {
-		fmt.Println("a")
 		return err
 	}
 	file, err := os.Create(output)
@@ -44,7 +43,6 @@ func document(input, output, tmpl, title, css, js string) error {
 	defer file.Close()
 	data := DataInDoc{Title: title, CSS: css, JS: js, Document: string(safeHTML)}
 	if err = t.Execute(file, data); err != nil {
-		fmt.Println("b")
 		return err
 	}
 
