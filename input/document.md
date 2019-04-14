@@ -1,5 +1,5 @@
-# Title (you can use # once only.)
-## Introduction (you can use ## once only.)
+# Title (Use # once only.)
+## Introduction (Use ## once only.)
 At introduction, you need write what you readers already know, understand or agree.
 You need to make sure that the readers and you are on the same stage.
 Then you need to write a question or problem on the situation. Finally write some points to support your argument.
