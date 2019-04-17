@@ -20,6 +20,12 @@ type DataInDoc struct {
 	Document string
 }
 
+// document receives many variables:
+// * input (input markdown file name)
+// * output (output html file name)
+// * tmpl (template file name)
+// * title, css, js (will be rendered in the template file)
+// and create an html output.
 func document(input, output, tmpl, title, css, js string) error {
 	// read a markdown file
 	markdown, err := ioutil.ReadFile(input)
@@ -50,7 +56,7 @@ func document(input, output, tmpl, title, css, js string) error {
 }
 
 func main() {
-	// set variables
+	// set variables for document()
 	var input, output, tmpl, title, css, js string
 	flag.StringVar(&input, "input", "input/document.md", "input filename")
 	flag.StringVar(&output, "output", "output/document.html", "output filename")
