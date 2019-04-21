@@ -6,53 +6,54 @@ body {
 }
 
 h1 {
-  padding: 1.5em 0em 1.5em 1em;
+  margin: 0em 0em 1em 0em;
+  padding: 0em;
 
-  background: black;
-  color: white;
-  font-size: 2em;
+  color: black;
+  font-size: 2.5em;
+  font-weight: bold;
 }
 
 h2 {
   margin-top: 0.5em;
-  margin-bottom: -0.6em;
-  font-size: 1.5em;
+  margin-bottom: -0.4em;
+  font-size: 1.7em;
 }
 
 h3 {
   margin-top: 2em;
-  margin-bottom: -0.6em;
-  font-size: 1.5em;
+  margin-bottom: -0.4em;
+  font-size: 1.7em;
+
+  border-bottom: 1px solid gray;
 }
 
 h4 {
   margin-top: 2em;
-  margin-bottom: -0.6em;
-  font-size: 1.2em;
+  margin-bottom: -0.4em;
+  font-size: 1.4em;
 }
 
 p {
   line-height: 1.7em;
 }
 
-li {
-  margin-top: 0.5em;
-  
-  list-style-type: none;
+/* TODO: write javascript in document.js */
+span.index-h3 {
+  font-size: 1.7em;
 }
 
-li::before {
-  position: relative;
-  top: -0.3em;
-  left: -0.3em;
+/* TODO: write javascript in document.js */
+span.index-h4 {
+  font-size: 1.4em;
+}
 
-  display: inline-block;
+li {
+  margin-top: 0.5em;
+}
 
-  width: 0.3em;
-  height: 0.3em;
-
-  content: "";
-
-  border-radius: 100%;
-  background: black;
+pre {
+  padding: 0.5em;
+  color: #ffffff;
+  background: #000000;
 }

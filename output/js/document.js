@@ -7,10 +7,10 @@ for(let k = 0; k < h.length; k++) {
   if(value.tagName == 'H3') {
     i++;
     j = 0;
-    value.textContent = i + '. ' + value.textContent;
+    value.textContent = i + ' ' + value.textContent;
   } else if(value.tagName == 'H4') {
     j++;
-    value.textContent = i + '.' + j + '. ' + value.textContent;
+    value.textContent = i + '.' + j + ' ' + value.textContent;
   }
 }
 
